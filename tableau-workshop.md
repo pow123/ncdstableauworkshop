@@ -1,7 +1,7 @@
 # NCDS Internship Tableau Workshop
 Instructor: Peace Ossom-Williamson
 
-Access the files on [GitHub](.). 
+Access the files on [GitHub](/../../). 
 Download and then unzip in order to have an `ncdstableauworkshop` folder. All data files are in the `data` folder.
 
 ## Overview
