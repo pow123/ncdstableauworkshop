@@ -1,11 +1,12 @@
 # NCDS Internship Tableau Workshop
 Instructor: Peace Ossom-Williamson
 
-Access data files at: <link in here>
+Access the files on [GitHub](https://github.com/pow123/ncdstableauworkshop). 
+Download and then unzip in order to have an `ncdstableauworkshop` folder. All data files are in the `data` folder.
+
+## Overview
 
 Let’s explore the price of gasoline in the United States and vehicle travel behavior. Our data table comes from five data sets. All U.S. data are provided by Month from January 1993 to June 2022.
-
-## About the Data Sources
 
 
 ### GAS PRICE DATA
@@ -71,25 +72,54 @@ The MSA shapefile comes from one data source. It must be downloaded and used as 
 
 2. Change data types as needed. You can create calculated fields here or later while in the sheets.
 
-<img src="img/img-02.jpg" width=50%>
+<img src="img/img-02.jpg" width=30%>
 
 3. To connect to the shapefile, click "Add." Then select "Spatial File." Select the zip file.
 
-<img src="img/img-03.jpg" width=50%>
+<img src="img/img-03.jpg" width=30%>
 
 4. To join these two, double-click the `data_table` in the center of the page. (Or, right-click and select "Open.") Complete a left join using "Location" for the data_table and "Name" for the shape file. As a secondary effort to ensure correct matching, you can also indicate that the "Loc Type" variable should equal "Metropolitan Statistical Area" in a custom join calculation.
 
-<img src="img/img-04.jpg" width=50%><img src="img/img-05.jpg" width=50%>
+<img src="img/img-04.jpg" width=30%><img src="img/img-05.jpg" width=30%>
+
 *Note: There should still be 785 rows.*
 
 ### Creating a Bar Chart
+
+**Let's look at the top 10 states where people drive the most.**
 
 5. Click on "Sheet 1" at the bottom to create your first visualization.
 
 <img src="img/img-06.jpg" width=30%>
 *Note: Tableau will prompt you to save the data extract. Press the "Save" button.*
 
-6. 
+6. Drag `Location` to "Rows."
 
+<img src="img/img-07.jpg" width=30%>
+     
+8. Since we are only focused on the states, drag "Loc Type" to the Filters box.
 
-How to add a link: [Duck Duck Go](https://duckduckgo.com)
+<img src="img/img-08.jpg" width=30%>
+
+9. Check the box by `State,` leaving the other 2 options (`null` and `Metropolitan Statistical Area`) unchecked. You'll see that we now are only showing data for the 50 states.
+10. Drag `Personmiles` to "Columns." Then sort the bars by size using the sort button.
+
+<img src="img/img-09.jpg" width=30%>
+
+11. Count the first ten states with the highest person miles, then select the 11th-50th states by selecting the 11th state (Kansas) and then using the "Shift" key while selecting the last state (Hawaii). Then right-click the selection and choose "Exclude."
+
+<img src="img/img-10.jpg" width=30%>
+
+12. To directly label the bars, drag `Personmiles` to the "Label" square. Then remove the y-axis by right-clicking it and unchecking the "Show Header" option.
+
+<img src="img/img-11.jpg" width=30%>
+
+13. Rename the sheet by double-clicking the tab at the bottom. Give it a full title, such as "Top 10 States for Average Miles a Person Has Driven Annually."
+
+### Creating a Line Chart
+
+**Let's now create a visualization of the gas prices over the years.**
+
+14. Each visualization lives on its own sheet. To create a new sheet, click the small tab that has an icon that looks like a bar chart with a plus sign.
+
+<img src="img/img-12.jpg" width=30%>
