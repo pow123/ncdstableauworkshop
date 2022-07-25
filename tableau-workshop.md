@@ -80,7 +80,7 @@ The MSA shapefile comes from one data source. It must be downloaded and used as 
 
 4. To join these two, double-click the `data_table` in the center of the page. (Or, right-click and select "Open.") Complete a left join using "Location" for the data_table and "Name" for the shape file. As a secondary effort to ensure correct matching, you can also indicate that the "Loc Type" variable should equal "Metropolitan Statistical Area" in a custom join calculation.
 
-<img src="img/img-04.jpg" width=30%><img src="img/img-05.jpg" width=30%>
+<img src="img/img-04.jpg" width=50%><img src="img/img-05.jpg" width=50%>
 
 *Note: There should still be 785 rows.*
 
@@ -139,7 +139,81 @@ The MSA shapefile comes from one data source. It must be downloaded and used as 
 > 17. Change the title of the new variable from "Calcuation 1" to "Gp Avg". Then, place the following formula in the big white box: `(SUM([Gp Bls-All])+ SUM([Gp Eia]))/2`
 > <img src="img/img-15.jpg" width=50%>
 
-18. Now that we are back on our Remove the two gas price variables in the "Rows" row. To add multiple variables as lines, we can drag "Measure Names," which lists all our variables, to the "Filters" box. Click the <kbd>None</kbd> button to uncheck everything. Then, only select `Gp Avg` and `Gp Bls-Unleaded`. Push the <kbd>OK</kbd> button to see the average cost of all gas compared with the average cost of unleaded.
+18. Now that we are back on our line chart, remove the two gas price variables in the "Rows" row. To add multiple variables as lines, we can drag "Measure Names," which lists all our variables, to the "Filters" box. Click the <kbd>None</kbd> button to uncheck everything. Then, only select `Gp Avg` and `Gp Bls-Unleaded`. Push the <kbd>OK</kbd> button to see the average cost of all gas compared with the average cost of unleaded.
 19. To add another variable (on a different scale), drag `Milestraveled` onto "Rows," then right-click it and check "Dual Axis."
 
 <img src="img/img-16.jpg" width=50%>
+
+20. Also, there are two points on the x-axis we should remove: `Null` and `2022`. Right-click and "Exclude" each one.
+
+<img src="img/img-16b.jpg" width=50%>
+
+21. Then, you can rename the sheet to be "How Have Gas Prices and Travel Distances Changed between 1993 and 2021?"
+
+### Creating a Scatterplot
+
+**Let's see if ther is any relationship between gas prices and how much people drive.**
+
+22. To start, drag `Gp Avg` to "Columns" and `Milestraveled` to "Rows." You'll only see one dot.
+
+<img src="img/img-17.jpg" width=50%>
+
+23. To make this a scatterplot, go to the top menu and choose "Analysis" then uncheck "Aggregate Measures."
+
+<img src="img/img-18.jpg" width=50%>
+<img src="img/img-19.jpg" width=50%>
+
+24. You can change the color, size, labels, and types of marks on your scatterplot by using the "Marks" menu on the left of the visualization.
+
+<img src="img/img-20.jpg" width=50%>
+
+25. You can add a trendline by clicking "Analysis" in the top menu again. This time, choose "Trend Lines" and "Show Trend Lines."
+26. Rename the scatterplot "Do People Travel Fewer Miles when Gas Prices Go Up?"
+
+<img src="img/img-21.jpg" width=50%>
+
+### Creating a Map
+**Let's use our MSA/CBSA shapefile to look at driving behavior in U.S. MSAs.**
+
+27. Drag `Geometry` to the center of your sheet to see all the U.S. Metropolitan Statistical Areas.
+
+<img src="img/img-22.jpg" width=50%>
+
+28. Next drag `DUI score` to the "Color" square in the Marks menu. 
+
+<img src="img/img-23.jpg" width=50%>
+
+30. Notice that they are all still one color. You'll need to go to "Analysis" in the top menu, and uncheck "Aggregate Measures."
+31. Once they are colored by `DUI score`, you can choose to change the color. To do so, click the down-pointing arrow in the top right of the DUI score legend and choose "Edit Colors." There are a variety of options to choose from. Click <kbd>Apply</kbd> to see the changes without exiting the menu.
+
+<img src="img/img-24.jpg" width=50%>
+
+31. Then drag `Location` to the Tooltip square so that the name of the MSA appears when you hover over it.
+
+<img src="img/img-25.jpg" width=50%>
+
+### Creating a Dashboard of All Your Visualizations
+
+**Once you have created a few visualizations, you can add them together on one dashboard, making an interactive infographic.**
+
+32. To start, click the "New Dashboard" tab at the bottom which shows a table of 4 cells with a plus sign.
+
+<img src="img/img-26.jpg" width=50%>
+
+> On the left menu, there are options to resize the dashboard space, to choose which sheet to drag onto the dashboard (hover your mouse over it to get a peak of any chart), and options to add other items to your dashboard, like spacers, additional text, and images.
+> 
+> <img src="img/img-27.jpg" width=50%>
+
+When you have the "Tiled" option selected near the bottom of the left menu, it will tile the selected visualizations and fill the entire dashboard. If you select "Floating," you can place a chart wherever you'd like. You can have some (or all) charts floating or tiled. You can also remove keys/legends that are not useful to you.
+
+33. Play around with the dashboard to get familiar with these features!
+
+### Publishing Your Dashboard
+
+**To publish any one item, you must have that item appearing on the screen. Let's publish the dashboard.**
+
+34. To publish the dashboard go to the "Server" option in the top menu, the select the following: Tableau Public > Save to Tableau Public. (You may first have to create an account if you don't have one already. Otherwise you should sign in.)
+
+<img src="img/img-28.jpg" width=50%>
+
+This saves your file to the Tableau Public server, placing the visualization online and available to link to and embed.
