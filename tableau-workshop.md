@@ -63,13 +63,26 @@ The MSA shapefile comes from one data source. It must be downloaded and used as 
 
 ## Tableau Steps
 
-### Joining Tables
-1. Upload the Excel file in Tableau using the left menu.
+### Connecting to Data and Joining Tables
+1. Upload the Excel file in Tableau using the left menu. Change to "Extract" since we will have more than one data source.
 
 <img src="img/img-01.jpg" width=50%>
 
 2. Change data types as needed. You can create calculated fields here or later while in the sheets.
 
-<img src="img/img-01.jpg" width=50%>
+<img src="img/img-02.jpg" width=50%>
+
+3. To connect to the shapefile, click "Add." Then select "Spatial File." Select the zip file.
+
+<img src="img/img-03.jpg" width=50%>
+
+4. To join these two, double-click the `data_table` in the center of the page. (Or, right-click and select "Open.") Complete a left join using "Location" for the data_table and "Name" for the shape file. As a secondary effort to ensure correct matching, you can also indicate that the "Loc Type" variable should equal "Metropolitan Statistical Area" in a custom join calculation.
+
+<img src="img/img-04.jpg" width=50%><img src="img/img-05.jpg" width=50%>
+*Notice there should still be 785 rows.*
+
+### Creating a Bar Chart
+
+
 
 How to add a link: [Duck Duck Go](https://duckduckgo.com)
