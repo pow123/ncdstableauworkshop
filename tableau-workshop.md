@@ -1,13 +1,28 @@
 # NCDS Internship Tableau Workshop
 Instructor: Peace Ossom-Williamson
 
-Access the files on [GitHub](https://github.com/pow123/ncdstableauworkshop). 
+Access the files on [GitHub](.). 
 Download and then unzip in order to have an `ncdstableauworkshop` folder. All data files are in the `data` folder.
 
 ## Overview
 
 Let’s explore the price of gasoline in the United States and vehicle travel behavior. Our data table comes from five data sets. All U.S. data are provided by Month from January 1993 to June 2022.
 
+### Table of Contents
+1. About
+     - [Gas Price Data](#gas-price-data)
+     - [U.S. Miles Traveled Data](#miles-traveled-data)
+     - [State and MSA Data](#state-and-msa-data)
+     - [MSA Shapefile](#shapefile)
+2. [Tableau Visualizations](#tableau-steps)
+     - [Connecting to Data and Joining Tables](#connecting-to-data-and-joining-tables)
+     - [Creating a Bar Chart](#creating-a-bar-chart)
+     - [Creating a Line Chart](#creating-a-line-chart)
+          - [Creating a Calculated Field](#creating-a-calculated-field)
+     - [Creating a Scatterplot](#creating-a-scatterplot)
+     - [Creating a Map](#creating-a-map)
+3. [Creating a Dashboard](#creating-a-dashboard-of-all-your-visualizations)
+4. [Publishing Your Dashboard](#publishing-your-dashboard)
 
 ### GAS PRICE DATA
 
@@ -26,6 +41,8 @@ Three data sets are recording the monthly price per gallon of gasoline in the Un
 > Similarly, to the unleaded information compiled for the U.S. Bureau of Labor Statistics, the 
 Consumer Price Index information represents a national market, and does not limit their sampling to a specific geographic area. The index does differ in that they attempt to regularly rotate the locations where they sample product prices, and do not adjust data for seasonal availability, which more accurately reflects the market (CPI: Average price data). Variable definition: Average U.S. cost of all types gasoline per gallon by month.
 
+[⬆Back to Table of Contents](#table-of-contents)
+
 ### MILES TRAVELED DATA
 
 The data for miles traveled will show how many total miles vehicles traveled that month.
@@ -35,6 +52,7 @@ The data for miles traveled will show how many total miles vehicles traveled tha
 4. Milestraveled: U.S. Federal Highway Administration, Vehicle Miles Traveled [TRFVOLUSM227NFWA], retrieved from FRED, Federal Reserve Bank of St. Louis; <https://fred.stlouisfed.org/series/TRFVOLUSM227NFWA>, June 23, 2022.
 > Vehicle Miles Traveled and the 12-Month Moving Vehicle Miles Traveled series are created by appending the recent monthly figures from the FHWA’s Traffic Volume Trends to their Historic Monthly Vehicle Miles Traveled (VMT) data file. Variable definition: Total vehicle miles traveled in the U.S. by month.
 
+[⬆Back to Table of Contents](#table-of-contents)
 
 ### STATE AND MSA DATA
 
@@ -57,11 +75,17 @@ The variables include
 
 \* *To make results easier to interpret, the website provides scores for states, metropolitan statistical areas, and urbanized areas on a scale of 0 to 100, where higher values are better. The score for a given state or area represents its percentile value. This is the percent of states or regions that score below it. Read more about how scores are calculated at <https://www7.transportation.gov/mission/health/tool-scoring-methodology>*
 
+[⬆Back to Table of Contents](#table-of-contents)
+
 ### SHAPEFILE
 
 The MSA shapefile comes from one data source. It must be downloaded and used as a ZIP file.
 
 6. U.S. Census Bureau. (2021, October 12). TIGER/Line Shapefile, 2019, nation, U.S., Current Metropolitan Statistical Area/Micropolitan Statistical Area (CBSA) National [Data set]. <https://catalog.data.gov/dataset/tiger-line-shapefile-2019-nation-u-s-current-metropolitan-statistical-area-micropolitan-statist>
+
+[⬆Back to Table of Contents](#table-of-contents)
+
+
 
 ## Tableau Steps
 
@@ -83,6 +107,9 @@ The MSA shapefile comes from one data source. It must be downloaded and used as 
 <img src="img/img-04.jpg" width=50%><img src="img/img-05.jpg" width=50%>
 
 *Note: There should still be 785 rows.*
+
+[⬆Back to Table of Contents](#table-of-contents)
+
 
 ### Creating a Bar Chart
 
@@ -115,6 +142,9 @@ The MSA shapefile comes from one data source. It must be downloaded and used as 
 <img src="img/img-11.jpg" width=50%>
 
 13. Rename the sheet by double-clicking the tab at the bottom. Give it a full title, such as "Top 10 States for Average Miles a Person Has Driven Annually."
+
+[⬆Back to Table of Contents](#table-of-contents)
+
 
 ### Creating a Line Chart
 
@@ -150,6 +180,10 @@ The MSA shapefile comes from one data source. It must be downloaded and used as 
 
 21. Then, you can rename the sheet to be "How Have Gas Prices and Travel Distances Changed between 1993 and 2021?"
 
+[⬆Back to Table of Contents](#table-of-contents)
+
+
+
 ### Creating a Scatterplot
 
 **Let's see if ther is any relationship between gas prices and how much people drive.**
@@ -171,6 +205,10 @@ The MSA shapefile comes from one data source. It must be downloaded and used as 
 26. Rename the scatterplot "Do People Travel Fewer Miles when Gas Prices Go Up?"
 
 <img src="img/img-21.jpg" width=50%>
+
+[⬆Back to Table of Contents](#table-of-contents)
+
+
 
 ### Creating a Map
 **Let's use our MSA/CBSA shapefile to look at driving behavior in U.S. MSAs.**
@@ -194,6 +232,10 @@ The MSA shapefile comes from one data source. It must be downloaded and used as 
 
 32. Rename the sheet to be "DUI Score by MSA".
 
+[⬆Back to Table of Contents](#table-of-contents)
+
+
+
 ### Creating a Dashboard of All Your Visualizations
 
 **Once you have created a few visualizations, you can add them together on one dashboard, making an interactive infographic.**
@@ -210,6 +252,11 @@ When you have the "Tiled" option selected near the bottom of the left menu, it w
 
 34. Play around with the dashboard to get familiar with these features!
 
+
+[⬆Back to Table of Contents](#table-of-contents)
+
+
+
 ### Publishing Your Dashboard
 
 **To publish any one item, you must have that item appearing on the screen. Let's publish the dashboard.**
@@ -219,3 +266,5 @@ When you have the "Tiled" option selected near the bottom of the left menu, it w
 <img src="img/img-28.jpg" width=50%>
 
 This saves your file to the Tableau Public server, placing the visualization online and available to link to and embed.
+
+[⬆Back to Table of Contents](#table-of-contents)
