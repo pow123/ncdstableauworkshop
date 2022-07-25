@@ -14,7 +14,7 @@ Three data sets are recording the monthly price per gallon of gasoline in the Un
 
 #### Sources
 
-1. gp_bls-unleaded: U.S. Bureau of Labor Statistics, Average Price: Gasoline, Unleaded Regular (Cost per Gallon/3.785 Liters) in U.S. City Average [APU000074714], retrieved from FRED, Federal Reserve Bank of St. Louis; <https://fred.stlouisfed.org/series/APU000074714, June 19, 2022>
+1. gp_bls-unleaded: U.S. Bureau of Labor Statistics, Average Price: Gasoline, Unleaded Regular (Cost per Gallon/3.785 Liters) in U.S. City Average [APU000074714], retrieved from FRED, Federal Reserve Bank of St. Louis; <https://fred.stlouisfed.org/series/APU000074714>, June 19, 2022.
 > The U.S. Bureau of Labor Statistics collects information about gasoline prices monthly from seventy-five urban areas of the United States monthly, through mail questionnaires. Variable definition: Average U.S. cost of unleaded regular gasoline per gallon by month.
 
 2. gp_eia: U.S. Energy Information Administration. (2022, June 13). U.S. All Grades All Formulations Retail Gasoline Prices. U.S. gasoline and diesel retail prices [Data Set]. <https://www.eia.gov/dnav/pet/pet_pri_gnd_dcus_nus_a.htm>
@@ -31,7 +31,7 @@ The data for miles traveled will show how many total miles vehicles traveled tha
 
 #### Source
 
-4. Milestraveled_inM: U.S. Federal Highway Administration, Vehicle Miles Traveled [TRFVOLUSM227NFWA], retrieved from FRED, Federal Reserve Bank of St. Louis; <https://fred.stlouisfed.org/series/TRFVOLUSM227NFWA, June 23, 2022>
+4. Milestraveled_inM: U.S. Federal Highway Administration, Vehicle Miles Traveled [TRFVOLUSM227NFWA], retrieved from FRED, Federal Reserve Bank of St. Louis; <https://fred.stlouisfed.org/series/TRFVOLUSM227NFWA>, June 23, 2022.
 > Vehicle Miles Traveled and the 12-Month Moving Vehicle Miles Traveled series are created by appending the recent monthly figures from the FHWA’s Traffic Volume Trends to their Historic Monthly Vehicle Miles Traveled (VMT) data file. Variable definition: Total vehicle miles traveled in the U.S. by month, given in millions.
 
 
@@ -62,5 +62,12 @@ The MSA shapefile comes from one data source. It must be downloaded and used as 
 6. U.S. Census Bureau. (2021, October 12). TIGER/Line Shapefile, 2019, nation, U.S., Current Metropolitan Statistical Area/Micropolitan Statistical Area (CBSA) National [Data set]. <https://catalog.data.gov/dataset/tiger-line-shapefile-2019-nation-u-s-current-metropolitan-statistical-area-micropolitan-statist>
 
 ## Tableau Steps
+
+### Joining Tables
+1. Upload the Excel file in Tableau using the left menu.
+![connect to Excel file](img/img-01.jpg)
+2. Change data types as needed. You can create calculated fields here or later while in the sheets.
+![change data types](img/img-02.png)
+
 How to add a link: [Duck Duck Go](https://duckduckgo.com)
 How to add an image: ![Tux, the Linux mascot](/assets/images/tux.png)
