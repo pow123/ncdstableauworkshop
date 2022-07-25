@@ -49,11 +49,12 @@ The variables include
 |     Location              |     Name of the state or MSA                                                       |
 |     Loc_Type              |     Type of location. 2 possible values: State, Metropolitan   Statistical Area    |
 |     DUI_rate              |     DUI/DWI Fatalities per 10,000 Residents: Raw Value                             |
-|     DUI_score             |     DUI/DWI Fatalities per 10,000 Residents: Score                                 |
-|     personmiles           |     Person Miles of Travel by Private Vehicle: Raw Value                           |
-|     vehiclemiles          |     Vehicle Miles Traveled per Capita: Raw Value                                   |
-|     vehiclemiles_score    |     Vehicle Miles Traveled per Capita: Score                                       |
+|     DUI_score             |     DUI/DWI Fatalities per 10,000 Residents: Score*                                |
+|     personmiles           |     Distance a Person Travels in a Year by Private Vehicle: Raw Value              |
+|     vehiclemiles          |     Total annual miles of vehicle travel per Capita: Raw Value                     |
+|     vehiclemiles_score    |     Vehicle Miles Traveled per Capita: Score*                                      |
 
+\* *To make results easier to interpret, the website provides scores for states, metropolitan statistical areas, and urbanized areas on a scale of 0 to 100, where higher values are better. The score for a given state or area represents its percentile value. This is the percent of states or regions that score below it. Read more about how scores are calculated at <https://www7.transportation.gov/mission/health/tool-scoring-methodology>*
 
 ### SHAPEFILE
 
@@ -66,7 +67,7 @@ The MSA shapefile comes from one data source. It must be downloaded and used as 
 ### Connecting to Data and Joining Tables
 1. Upload the Excel file in Tableau using the left menu. Change to "Extract" since we will have more than one data source.
 
-<img src="img/img-01.jpg" width=50%>
+<img src="img/img-01.jpg" width=30%>
 
 2. Change data types as needed. You can create calculated fields here or later while in the sheets.
 
@@ -79,10 +80,16 @@ The MSA shapefile comes from one data source. It must be downloaded and used as 
 4. To join these two, double-click the `data_table` in the center of the page. (Or, right-click and select "Open.") Complete a left join using "Location" for the data_table and "Name" for the shape file. As a secondary effort to ensure correct matching, you can also indicate that the "Loc Type" variable should equal "Metropolitan Statistical Area" in a custom join calculation.
 
 <img src="img/img-04.jpg" width=50%><img src="img/img-05.jpg" width=50%>
-*Notice there should still be 785 rows.*
+*Note: There should still be 785 rows.*
 
 ### Creating a Bar Chart
 
+5. Click on "Sheet 1" at the bottom to create your first visualization.
+
+<img src="img/img-06.jpg" width=30%>
+*Note: Tableau will prompt you to save the data extract. Press the "Save" button.*
+
+6. 
 
 
 How to add a link: [Duck Duck Go](https://duckduckgo.com)
