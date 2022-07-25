@@ -66,10 +66,10 @@ The MSA shapefile comes from one data source. It must be downloaded and used as 
 ### Joining Tables
 1. Upload the Excel file in Tableau using the left menu.
 
-![connect to Excel file](img/img-01.jpg)
+<img src="img/img-01.jpg width=50%>
 
 2. Change data types as needed. You can create calculated fields here or later while in the sheets.
 
-![change data types](img/img-02.jpg)
+<img src="img/img-01.jpg width=50%>
 
 How to add a link: [Duck Duck Go](https://duckduckgo.com)
