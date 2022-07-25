@@ -32,8 +32,8 @@ The data for miles traveled will show how many total miles vehicles traveled tha
 
 #### Source
 
-4. Milestraveled_inM: U.S. Federal Highway Administration, Vehicle Miles Traveled [TRFVOLUSM227NFWA], retrieved from FRED, Federal Reserve Bank of St. Louis; <https://fred.stlouisfed.org/series/TRFVOLUSM227NFWA>, June 23, 2022.
-> Vehicle Miles Traveled and the 12-Month Moving Vehicle Miles Traveled series are created by appending the recent monthly figures from the FHWA’s Traffic Volume Trends to their Historic Monthly Vehicle Miles Traveled (VMT) data file. Variable definition: Total vehicle miles traveled in the U.S. by month, given in millions.
+4. Milestraveled: U.S. Federal Highway Administration, Vehicle Miles Traveled [TRFVOLUSM227NFWA], retrieved from FRED, Federal Reserve Bank of St. Louis; <https://fred.stlouisfed.org/series/TRFVOLUSM227NFWA>, June 23, 2022.
+> Vehicle Miles Traveled and the 12-Month Moving Vehicle Miles Traveled series are created by appending the recent monthly figures from the FHWA’s Traffic Volume Trends to their Historic Monthly Vehicle Miles Traveled (VMT) data file. Variable definition: Total vehicle miles traveled in the U.S. by month.
 
 
 ### STATE AND MSA DATA
@@ -90,29 +90,29 @@ The MSA shapefile comes from one data source. It must be downloaded and used as 
 
 5. Click on "Sheet 1" at the bottom to create your first visualization.
 
-<img src="img/img-06.jpg" width=30%>
+<img src="img/img-06.jpg" width=50%>
 *Note: Tableau will prompt you to save the data extract. Press the "Save" button.*
 
 6. Drag `Location` to "Rows."
 
-<img src="img/img-07.jpg" width=30%>
+<img src="img/img-07.jpg" width=50%>
      
 8. Since we are only focused on the states, drag "Loc Type" to the Filters box.
 
-<img src="img/img-08.jpg" width=30%>
+<img src="img/img-08.jpg" width=50%>
 
 9. Check the box by `State,` leaving the other 2 options (`null` and `Metropolitan Statistical Area`) unchecked. You'll see that we now are only showing data for the 50 states.
 10. Drag `Personmiles` to "Columns." Then sort the bars by size using the sort button.
 
-<img src="img/img-09.jpg" width=30%>
+<img src="img/img-09.jpg" width=50%>
 
 11. Count the first ten states with the highest person miles, then select the 11th-50th states by selecting the 11th state (Kansas) and then using the "Shift" key while selecting the last state (Hawaii). Then right-click the selection and choose "Exclude."
 
-<img src="img/img-10.jpg" width=30%>
+<img src="img/img-10.jpg" width=50%>
 
 12. To directly label the bars, drag `Personmiles` to the "Label" square. Then remove the y-axis by right-clicking it and unchecking the "Show Header" option.
 
-<img src="img/img-11.jpg" width=30%>
+<img src="img/img-11.jpg" width=50%>
 
 13. Rename the sheet by double-clicking the tab at the bottom. Give it a full title, such as "Top 10 States for Average Miles a Person Has Driven Annually."
 
@@ -122,4 +122,24 @@ The MSA shapefile comes from one data source. It must be downloaded and used as 
 
 14. Each visualization lives on its own sheet. To create a new sheet, click the small tab that has an icon that looks like a bar chart with a plus sign.
 
-<img src="img/img-12.jpg" width=30%>
+<img src="img/img-12.jpg" width=50%>
+
+15. Drag `Mon-Yr` to "Columns" and 2 variables to "Rows": `Gp Bls-All` and `Gp-Eia`. To put them together, right-click `Gp-Eia` in the "Rows" row, and select "Dual Access."
+
+<img src="img/img-13.jpg" width=50%>
+
+> #### Creating a Calculated Field
+> 
+> **Since these two variables are similar measures of the same information, we can average them together to create one variable of gas prices.**
+> 
+> 16. To create this calculated variable, right-click an empty area on the right menu (or right-click `Gp Bls-All`), then choose "Create" and "Calculated Field." 
+> 
+> <img src="img/img-14.jpg" width=50%>
+> 
+> 17. Change the title of the new variable from "Calcuation 1" to "Gp Avg". Then, place the following formula in the big white box: `(SUM([Gp Bls-All])+ SUM([Gp Eia]))/2`
+> <img src="img/img-15.jpg" width=50%>
+
+18. Now that we are back on our Remove the two gas price variables in the "Rows" row. To add multiple variables as lines, we can drag "Measure Names," which lists all our variables, to the "Filters" box. Click the <kbd>None</kbd> button to uncheck everything. Then, only select `Gp Avg` and `Gp Bls-Unleaded`. Push the <kbd>OK</kbd> button to see the average cost of all gas compared with the average cost of unleaded.
+19. To add another variable (on a different scale), drag `Milestraveled` onto "Rows," then right-click it and check "Dual Axis."
+
+<img src="img/img-16.jpg" width=50%>
