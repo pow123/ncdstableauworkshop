@@ -14,16 +14,15 @@ Three data sets are recording the monthly price per gallon of gasoline in the Un
 
 #### Sources
 
-> gp_bls-unleaded: U.S. Bureau of Labor Statistics, Average Price: Gasoline, Unleaded Regular (Cost per Gallon/3.785 Liters) in U.S. City Average [APU000074714], retrieved from FRED, Federal Reserve Bank of St. Louis; <https://fred.stlouisfed.org/series/APU000074714, June 19, 2022>
->> The U.S. Bureau of Labor Statistics collects information about gasoline prices monthly from seventy-five urban areas of the United States
->> monthly, through mail questionnaires. Variable definition: Average U.S. cost of unleaded regular gasoline per gallon by month.
+1. gp_bls-unleaded: U.S. Bureau of Labor Statistics, Average Price: Gasoline, Unleaded Regular (Cost per Gallon/3.785 Liters) in U.S. City Average [APU000074714], retrieved from FRED, Federal Reserve Bank of St. Louis; <https://fred.stlouisfed.org/series/APU000074714, June 19, 2022>
+> The U.S. Bureau of Labor Statistics collects information about gasoline prices monthly from seventy-five urban areas of the United States monthly, through mail questionnaires. Variable definition: Average U.S. cost of unleaded regular gasoline per gallon by month.
 
-> gp_eia: U.S. Energy Information Administration. (2022, June 13). U.S. All Grades All Formulations Retail Gasoline Prices. U.S. gasoline and diesel retail prices [Data Set]. <https://www.eia.gov/dnav/pet/pet_pri_gnd_dcus_nus_a.htm>
->> The information in this dataset is compiled by the U.S. Energy Information Administration, and collected at 8:00 a.m. Monday mornings, on a weekly basis at stations across the country. According to the Methodology for EIA Weekly Retail Gasoline Price Estimates, information on regular, mid-grade, and high-grade gasoline are collected, to provide a more balanced comparison of consumer prices available. These prices are then compiled to provide averages at the city, county, state, regional, and national levels. Variable definition: Weekly retail gasoline and diesel prices
+2. gp_eia: U.S. Energy Information Administration. (2022, June 13). U.S. All Grades All Formulations Retail Gasoline Prices. U.S. gasoline and diesel retail prices [Data Set]. <https://www.eia.gov/dnav/pet/pet_pri_gnd_dcus_nus_a.htm>
+> The information in this dataset is compiled by the U.S. Energy Information Administration, and collected at 8:00 a.m. Monday mornings, on a weekly basis at stations across the country. According to the Methodology for EIA Weekly Retail Gasoline Price Estimates, information on regular, mid-grade, and high-grade gasoline are collected, to provide a more balanced comparison of consumer prices available. These prices are then compiled to provide averages at the city, county, state, regional, and national levels. Variable definition: Weekly retail gasoline and diesel prices
 (dollars per gallon).
 
-> gp_bls-all: U.S. Bureau of Labor Statistics. (2022). Top picks (most requested statistics) - Gasoline, all types, per gallon/3.785 liters in U.S. city average, average price, not seasonally adjusted & Gasoline, unleaded regular, per gallon/3.785 liters in U.S. city average, average price, not seasonally adjusted. U.S. Bureau of Labor Statistics - Consumer Price Index [Data set]. <https://data.bls.gov/cgi-bin/surveymost?ap>
->> Similarly, to the unleaded information compiled for the U.S. Bureau of Labor Statistics, the 
+3. gp_bls-all: U.S. Bureau of Labor Statistics. (2022). Top picks (most requested statistics) - Gasoline, all types, per gallon/3.785 liters in U.S. city average, average price, not seasonally adjusted & Gasoline, unleaded regular, per gallon/3.785 liters in U.S. city average, average price, not seasonally adjusted. U.S. Bureau of Labor Statistics - Consumer Price Index [Data set]. <https://data.bls.gov/cgi-bin/surveymost?ap>
+> Similarly, to the unleaded information compiled for the U.S. Bureau of Labor Statistics, the 
 Consumer Price Index information represents a national market, and does not limit their sampling to a specific geographic area. The index does differ in that they attempt to regularly rotate the locations where they sample product prices, and do not adjust data for seasonal availability, which more accurately reflects the market (CPI: Average price data). Variable definition: Average U.S. cost of all types gasoline per gallon by month.
 
 ### MILES TRAVELED DATA
@@ -32,8 +31,8 @@ The data for miles traveled will show how many total miles vehicles traveled tha
 
 #### Source
 
-> Milestraveled_inM: U.S. Federal Highway Administration, Vehicle Miles Traveled [TRFVOLUSM227NFWA], retrieved from FRED, Federal Reserve Bank of St. Louis; <https://fred.stlouisfed.org/series/TRFVOLUSM227NFWA, June 23, 2022>
->> Vehicle Miles Traveled and the 12-Month Moving Vehicle Miles Traveled series are created by appending the recent monthly figures from the FHWA’s Traffic Volume Trends to their Historic Monthly Vehicle Miles Traveled (VMT) data file. Variable definition: Total vehicle miles traveled in the U.S. by month, given in millions.
+4. Milestraveled_inM: U.S. Federal Highway Administration, Vehicle Miles Traveled [TRFVOLUSM227NFWA], retrieved from FRED, Federal Reserve Bank of St. Louis; <https://fred.stlouisfed.org/series/TRFVOLUSM227NFWA, June 23, 2022>
+> Vehicle Miles Traveled and the 12-Month Moving Vehicle Miles Traveled series are created by appending the recent monthly figures from the FHWA’s Traffic Volume Trends to their Historic Monthly Vehicle Miles Traveled (VMT) data file. Variable definition: Total vehicle miles traveled in the U.S. by month, given in millions.
 
 
 ### STATE AND MSA DATA
@@ -42,7 +41,7 @@ Vehicle-related data for states and metropolitan statistical areas is provided f
 
 #### Source
 
-U.S. Department of Transportation. (2015, October 27). Transportation and Health Tool. <https://www7.transportation.gov/transportation-health-tool>
+5. U.S. Department of Transportation. (2015, October 27). Transportation and Health Tool. <https://www7.transportation.gov/transportation-health-tool>
 
 The variables include
 | Variable Name             | Variable Definition                                                                |
@@ -60,7 +59,7 @@ The variables include
 
 The MSA shapefile comes from one data source. It must be downloaded and used as a ZIP file.
 
-U.S. Census Bureau. (2021, October 12). TIGER/Line Shapefile, 2019, nation, U.S., Current Metropolitan Statistical Area/Micropolitan Statistical Area (CBSA) National [Data set]. <https://catalog.data.gov/dataset/tiger-line-shapefile-2019-nation-u-s-current-metropolitan-statistical-area-micropolitan-statist>
+6. U.S. Census Bureau. (2021, October 12). TIGER/Line Shapefile, 2019, nation, U.S., Current Metropolitan Statistical Area/Micropolitan Statistical Area (CBSA) National [Data set]. <https://catalog.data.gov/dataset/tiger-line-shapefile-2019-nation-u-s-current-metropolitan-statistical-area-micropolitan-statist>
 
 ## Tableau Steps
 How to add a link: [Duck Duck Go](https://duckduckgo.com)
