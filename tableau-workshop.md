@@ -154,7 +154,7 @@ The MSA shapefile comes from one data source. It must be downloaded and used as 
 
 <img src="img/img-12.jpg" width=50%>
 
-15. Drag `Mon-Yr` to "Columns" and 2 variables to "Rows": `Gp Bls-All` and `Gp-Eia`. To put them together, right-click `Gp-Eia` in the "Rows" row, and select "Dual Access."
+15. Drag `Mon-Yr` to "Columns" and 2 variables to "Rows": `Gp Bls-All` and `Gp-Eia`. To put them together, right-click `Gp-Eia` in the "Rows" row, and select "Dual Axis."
 
 <img src="img/img-13.jpg" width=50%>
 
