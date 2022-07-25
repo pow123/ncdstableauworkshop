@@ -192,11 +192,13 @@ The MSA shapefile comes from one data source. It must be downloaded and used as 
 
 <img src="img/img-25.jpg" width=50%>
 
+32. Rename the sheet to be "DUI Score by MSA".
+
 ### Creating a Dashboard of All Your Visualizations
 
 **Once you have created a few visualizations, you can add them together on one dashboard, making an interactive infographic.**
 
-32. To start, click the "New Dashboard" tab at the bottom which shows a table of 4 cells with a plus sign.
+33. To start, click the "New Dashboard" tab at the bottom which shows a table of 4 cells with a plus sign.
 
 <img src="img/img-26.jpg" width=50%>
 
@@ -206,13 +208,13 @@ The MSA shapefile comes from one data source. It must be downloaded and used as 
 
 When you have the "Tiled" option selected near the bottom of the left menu, it will tile the selected visualizations and fill the entire dashboard. If you select "Floating," you can place a chart wherever you'd like. You can have some (or all) charts floating or tiled. You can also remove keys/legends that are not useful to you.
 
-33. Play around with the dashboard to get familiar with these features!
+34. Play around with the dashboard to get familiar with these features!
 
 ### Publishing Your Dashboard
 
 **To publish any one item, you must have that item appearing on the screen. Let's publish the dashboard.**
 
-34. To publish the dashboard go to the "Server" option in the top menu, the select the following: Tableau Public > Save to Tableau Public. (You may first have to create an account if you don't have one already. Otherwise you should sign in.)
+35. To publish the dashboard go to the "Server" option in the top menu, the select the following: Tableau Public > Save to Tableau Public. (You may first have to create an account if you don't have one already. Otherwise you should sign in.)
 
 <img src="img/img-28.jpg" width=50%>
 
